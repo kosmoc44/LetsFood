@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'ReadexPro';
+    src: url(../fonts/ReadexPro-Bold.ttf);
+    font-family: 700;
+}
+@font-face {
+    font-family: 'ReadexPro';
+    src: url(../fonts/ReadexPro-Regular.ttf);
+    font-family: 400;
+}
+@font-face {
+    font-family: 'ReadexPro';
+    src: url(../fonts/ReadexPro-SemiBold.ttf);
+    font-family: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Bold.ttf);
+    font-family: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Medium.ttf);
+    font-family: 500;
+}

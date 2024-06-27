@@ -1,0 +1,819 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1210px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container__path {
+    max-width: 1060px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    background:
+        #FFF9EA;
+}
+
+.header__wrap {
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.header__list-item_link {
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27.5px;
+    text-align: left;
+    color: #1D1D1DB2;
+    position: relative;
+}
+
+.header__list-item_link::after {
+    position: absolute;
+    content: "";
+    background: #FFCB45b2;
+    bottom: -8px;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    width: 0;
+}
+
+.header__list-item_link:hover::after {
+    width: 100%;
+    transition: 0.3s;
+
+}
+
+.header__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.header__items-lg {
+    position: relative;
+}
+
+.header__items-lg span {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    background:
+        #FFCB45;
+    color: #fff;
+    max-width: 17px;
+    height: 17px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Inter';
+    font-size: 13px;
+}
+
+.header__items-entr {
+    transition: 0.5s;
+    max-width: 122px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 55px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+    font-family: 'ReadexPro';
+    font-size: 14px;
+    font-weight: 700;
+    background: #FFCB45;
+    color: #000;
+    border: none;
+
+}
+
+.header__items-entr svg:hover {
+    color: #FFCB45;
+}
+
+
+.header__items-entr:hover {
+    background: #000;
+    border-radius: 7px;
+    color: #FFCB45;
+}
+
+.banner {
+    position: relative;
+    height: 601px;
+}
+
+.banner__waves {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.banner__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+.banner__desc-title {
+    max-width: 480px;
+    width: 100%;
+    font-family: 'ReadexPro';
+    font-size: 48px;
+    font-weight: 600;
+    color: #000;
+}
+
+.banner__desc-title span {
+    font-family: 'ReadexPro';
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFCB45;
+
+}
+
+.banner__desc-subtitle {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+    max-width: 370px;
+    width: 100%;
+}
+
+.banner__desc-btn {
+    max-width: 122px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #FFCB45;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.banner__desc-btn:hover {
+    color: #FFCB45;
+    background: #000;
+    border-radius: 7px;
+}
+
+.banner__img {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner__dish1 {
+    position: absolute;
+    left: 260px;
+    top: 0;
+}
+
+.banner__dish2 {
+    position: absolute;
+    left: 180px;
+    top: 290px;
+}
+
+.banner__dish3 {
+    position: absolute;
+    top: 340px;
+    left: 400px;
+}
+
+.banner__round1 {
+    position: absolute;
+    left: 180px;
+    top: 30px;
+}
+
+.banner__round2 {
+    position: absolute;
+    left: 220px;
+    top: 250px;
+}
+
+.banner__round3 {
+    position: absolute;
+    left: 600px;
+    top: 260px;
+}
+
+.banner__round4 {
+    position: absolute;
+    left: 105px;
+    top: 450px;
+}
+
+.delivery {
+    padding: 80px 0;
+}
+
+.delivery__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.delivery__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery__desc span {
+    color: #FFCB45;
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+
+.delivery__desc-title {
+    font-family: 'ReadexPro';
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 26px;
+}
+
+.delivery__desc-subtitle {
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    color: #1D1D1DB2;
+    max-width: 611px;
+    width: 100%;
+    text-align: center;
+}
+
+.delivery__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 156px;
+}
+
+.delivery__content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.delivery__content-card img {
+    max-width: 180px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+}
+
+.delivery__content-card_title {
+    font-family: 'ReadexPro';
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.delivery__content-card_subtitle {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #1D1D1DB2;
+    max-width: 220px;
+    width: 100%;
+}
+
+.delivery__content-card:nth-child(1),
+.delivery__content-card_subtitle {
+    max-width: 235px;
+    width: 100%;
+}
+
+.delivery__content-card:nth-child(3),
+.delivery__content-card_subtitle {
+    max-width: 240px;
+    width: 100%;
+}
+
+.menu {
+    padding-bottom: 45px;
+}
+
+
+
+.menu__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.menu__desc span {
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFCB45;
+    margin-bottom: 6px;
+}
+
+.menu__desc-title {
+    font-family: 'ReadexPro';
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 27px;
+}
+
+.menu__desc-subtitle {
+    max-width: 518px;
+    width: 100%;
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    color: #1D1D1DB2;
+    text-align: center;
+}
+
+.menu__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 71px;
+}
+
+.menu__card1 {
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: #F1F1F1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 5px 12px 0px #00000026;
+
+
+}
+
+.menu__card1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu__card1-desc {
+    background: #fff;
+    border-radius: 600px 600px 30px 30px / 115px 115px 30px 30px;
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+    padding: 14px 22px 13px;
+}
+
+.menu__card1-desc_title {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.menu__card1-desc_subtitle {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+    margin-bottom: 10px;
+}
+
+.menu__card1-desc_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__card1-desc_price span {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+
+}
+
+
+.menu__card1-desc svg {
+    color: grey;
+}
+
+.menu__card1-desc_price svg:hover {
+    color: #FFCB45;
+    transition: 0.3s;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__btn-txt {
+    background: #FFCB45;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 29px;
+    font-family: 'ReadexPro';
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    transition: 0.5s;
+
+}
+
+.menu__btn-txt:hover {
+    background: #000;
+    color: #FFCB45;
+    border-radius: 7px;
+}
+
+.about {
+    padding-bottom: 80px;
+}
+
+.about__wrap {
+    display: flex;
+    gap: 101px;
+}
+
+.about__img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__desc span {
+    font-family: 'ReadexPro';
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFCB45;
+    margin-bottom: 9px;
+}
+
+.about__desc-title {
+    font-family: 'ReadexPro';
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    max-width: 481px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.about__desc-report {
+    display: flex;
+    margin-right: -550px;
+    gap: 24px;
+}
+
+.about__desc-report_box {
+    max-width: 452px;
+    width: 100%;
+    background:
+        #F1F1F1;
+    padding: 28px 20px 29px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.about__desc-report_box-m {
+    display: flex;
+    gap: 18px;
+}
+
+
+.about__desc-report_box-s {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.about__desc-report_box-s_name {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.about__desc-report_box-subtitle {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+    max-width: 412px;
+    width: 100%;
+}
+
+.about__round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.discount {
+    padding-bottom: 80px;
+}
+
+.discount__img {
+    background: url(../img/discimg.png) no-repeat center/cover;
+    height: 332px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.discount__img-title {
+    font-family: 'ReadexPro';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    max-width: 524px;
+    width: 100%;
+    color: #fff;
+}
+
+.discount__img-btn {
+    padding: 10px 32px;
+    max-width: 122px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #FFCB45;
+    color: #000;
+    font-family: 'ReadexPro';
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+
+.discount__img-btn:hover {
+    background: #000;
+    color: #FFCB45;
+    border-radius: 7px;
+}
+
+.footer {
+    padding: 85px 0 47px;
+    background: rgb(255, 249, 234);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.footer__content-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.footer__content-media_txt {
+    max-width: 380px;
+    width: 100%;
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+}
+
+.footer__content-media_link {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__content-media_link-items {
+    border-radius: 50%;
+    max-width: 46px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: 0.5s;
+    box-shadow: 0px 4px 12px 0px #1D1D1D26;
+
+}
+
+.footer__content-media_link-items:hover {
+    background: #FFCB45;
+    border-radius: 30%;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.footer__company-title img {
+    position: absolute;
+    right: 90px;
+    bottom: 5px;
+    z-index: -1;
+}
+
+.footer__company-title {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+
+.footer__company-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__company-list_item-link {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+
+}
+
+.footer__policy {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.footer__policy-title {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.footer__policy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__policy-list_item-link {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+}
+
+.footer__policy-list_item-linkimg {
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1D1D1DB2;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__policy-list_item-linkimg img {
+    position: absolute;
+    right: 50px;
+    z-index: -1;
+}
+
+.footer__call {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.footer__call-title {
+    font-family: 'ReadexPro';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__call-title img {
+    position: absolute;
+    z-index: -1;
+    right: 20px;
+    left: 90px;
+    top: -70px;
+}
+
+.footer__call-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    font-family: 'ReadexPro';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__call-info a {
+    color: #1D1D1DB2;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+.footer__right-title {
+    font-family: 'ReadexPro';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    max-width: 321px;
+    width: 100%;
+
+}
